@@ -63,44 +63,19 @@
 			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!-- Spring Web -->
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-web</artifactId>
-</dependency>
-
-<!-- Spring Data JPA -->
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-data-jpa</artifactId>
-</dependency>
-
-<!-- WebFlux (for WebClient to call User Service) -->
-<dependency>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-webflux</artifactId>
-</dependency>
-
-<!-- H2 Database (local, in-memory) -->
-<dependency>
-    <groupId>com.h2database</groupId>
-    <artifactId>h2</artifactId>
+  <!-- DB -->
+  <dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
     <scope>runtime</scope>
-</dependency>
+  </dependency>
 
-<!-- Lombok -->
-<dependency>
-    <groupId>org.projectlombok</groupId>
-    <artifactId>lombok</artifactId>
-    <optional>true</optional>
-</dependency>
-
-<!-- Swagger / OpenAPI -->
-<dependency>
+  <!-- OpenAPI UI -->
+  <dependency>
     <groupId>org.springdoc</groupId>
     <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
     <version>2.1.0</version>
-</dependency>
+  </dependency>
 
 	</dependencies>
 
